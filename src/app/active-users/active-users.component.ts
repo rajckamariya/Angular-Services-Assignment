@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-active-users',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./active-users.component.css']
 })
 export class ActiveUsersComponent implements OnInit {
-
-  constructor() { }
+  @Input() user: { name: string; status: string };
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
+    console.log(this.user);
   }
-
 }
