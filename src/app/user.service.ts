@@ -11,4 +11,8 @@ export class UserService {
     { name: 'Dhaval', status: 'Active' },
     { name: 'Karan', status: 'Active' }
   ];
+
+  changeStatus(id: number, status: string) {
+    this.users[id].status = status;
+  }
 }

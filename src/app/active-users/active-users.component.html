@@ -1,1 +1,2 @@
-<li class="list-group-item" *ngIf="user.status==='Active">{{user.name}}: <a href="#">Set To Active</a></li>
+<li class="list-group-item" *ngIf="user.status==='Active'">{{user.name}}: <a href="#" (click)="onSetTo('Inactive')">Set
+    To Inactive</a></li>
