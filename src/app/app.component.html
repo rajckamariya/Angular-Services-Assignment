@@ -1,7 +1,18 @@
 <div class="row">
   <div class="col-md-12">
-    <app-active-users *ngFor="let userEl of user" [user]="userEl"></app-active-users>
+    <h3>Active Users</h3>
+    <div style="margin:0 10px">
+      <ul class="list-group">
+        <app-active-users *ngFor="let userEl of user" [user]="userEl">
+        </app-active-users>
+      </ul>
+    </div>
     <hr>
-    <app-inactive-users></app-inactive-users>
+    <h3>Inactive Users</h3>
+    <div style="margin:0 10px">
+      <ul class="list-group">
+        <app-inactive-users></app-inactive-users>
+      </ul>
+    </div>
   </div>
 </div>

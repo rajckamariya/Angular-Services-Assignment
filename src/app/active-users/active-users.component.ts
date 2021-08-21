@@ -8,9 +8,8 @@ import { UserService } from '../user.service';
 })
 export class ActiveUsersComponent implements OnInit {
   @Input() user: { name: string; status: string };
+
   constructor(private userService: UserService) {}
 
-  ngOnInit() {
-    console.log(this.user);
-  }
+  ngOnInit() {}
 }

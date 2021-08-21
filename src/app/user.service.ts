@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
 export class UserService {
   constructor() {}
 
-  users: [
-    { name: 'Rahul'; status: 'Active' },
-    { name: 'Umesh'; status: 'Inactive' },
-    { name: 'Sanju'; status: 'Active' },
-    { name: 'Dhaval'; status: 'Active' },
-    { name: 'Karan'; status: 'Active' }
+  users = [
+    { name: 'Rahul', status: 'Active' },
+    { name: 'Umesh', status: 'Inactive' },
+    { name: 'Sanju', status: 'Active' },
+    { name: 'Dhaval', status: 'Active' },
+    { name: 'Karan', status: 'Active' }
   ];
 }
